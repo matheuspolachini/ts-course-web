@@ -1,13 +1,11 @@
 import { User } from "./models/User";
 
 const user: User = new User({
-  id: 5,
-  name: "asda",
-  age: 20,
+  id: 1,
 });
 
 user.on("change", () => {
-  console.log("change");
+  console.log(user);
 });
 
-user.set({ name: "New name" });
+user.fetch();
