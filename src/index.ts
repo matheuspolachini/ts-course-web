@@ -10,6 +10,4 @@ user.on("change", () => {
   console.log("change");
 });
 
-user.trigger("change");
-
-console.log(user.get("name"));
+user.set({ name: "New name" });
