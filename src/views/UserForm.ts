@@ -21,9 +21,9 @@ export class UserForm {
     };
   }
 
-  onSetAgeClick(): void {
-    console.log("button was clicked");
-  }
+  onSetAgeClick = (): void => {
+    this.model.setRandomAge();
+  };
 
   bindEvents(fragment: DocumentFragment) {
     const eventsMap = this.eventsMap();
