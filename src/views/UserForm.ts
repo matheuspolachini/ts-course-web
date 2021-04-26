@@ -14,7 +14,7 @@ export class UserForm {
   eventsMap(): { [key: string]: () => void } {
     return {
       "click:button": this.onButtonClick,
-      "mouseover:h1": this.onHeaderOver,
+      "mouseover:h1": this.onHeaderHover,
     };
   }
 
@@ -22,7 +22,7 @@ export class UserForm {
     console.log("Hi there");
   }
 
-  onHeaderOver(): void {
+  onHeaderHover(): void {
     console.log("H1 was hovered over");
   }
 
